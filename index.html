@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCTC Next Generation eTicketing System</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/faviicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .main_container{
+            background-image: url(assets/mainbg.jpeg);
+        }
+    .logo-img { height: 60px; }
+    .topbar { padding: 6px 0; border-bottom: 1px solid #ccc; }
+    .nav-link { font-size: 14px; font-weight: 500; padding: 0 8px; color: #000; }
+    .login-btn { background-color: #213D77; color: #fff; font-weight: bold; padding: 4px 12px; margin-right: 10px; }
+    .daily-deals { color: red; font-weight: bold; }
+    .alert-box { background-color: #dedede; padding: 4px 10px; font-weight: bold; margin: 0 8px; }
+    #clock { white-space: nowrap; font-weight: 600; }
+    .lang-options a { padding: 0 4px; }
+    .service-nav .nav-link.active { background-color: #213D77; color: #fff !important; font-weight: bold; }
+    .service-nav .nav-link.highlight { color: #f48220; text-decoration: underline; text-underline-offset: 4px; font-weight: bold; }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid p-2">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+  
+      <div class="d-flex align-items-center">
+        <img src="assets/asset 1.png" alt="Indian Railways Logo" class="logo-img me-3" style="height: 80px;"/>
+      </div>
+
+      <div class="d-flex align-items-center flex-wrap justify-content-center flex-grow-1">
+        <button class="btn btn-sm login-btn me-2">LOGIN</button>
+        <a href="#" class="nav-link">REGISTER</a>
+        <a href="#" class="nav-link">AGENT LOGIN</a>
+        <a href="#" class="nav-link">CONTACT US</a>
+        <a href="#" class="nav-link">HELP & SUPPORT</a>
+        <a href="#" class="nav-link text-danger fw-bold">DAILY DEALS</a>
+        <span class="alert-box">ALERTS</span>
+        <span class="nav-link" id="clock">25-May-2025 [18:21:02]</span>
+        <div class="lang-options d-flex align-items-center">
+          <a href="#" class="nav-link px-1">A-</a>
+          <a href="#" class="nav-link px-1">A</a>
+          <a href="#" class="nav-link px-1">A+</a>
+          <a href="#" class="nav-link px-1">हिंदी</a>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <img src="assets/asset 2.png" alt="IRCTC Logo" class="logo-img ms-3" style="height: 80px;" />
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mt-2">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNavbar"
+          aria-controls="serviceNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="serviceNavbar">
+          <ul class="navbar-nav flex-wrap text-center">
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="nav-item"><a class="nav-link active text-white px-3 rounded" href="#" style="background-color: #213D77;">IRCTC EXCLUSIVE</a></li>
+            <li class="nav-item"><a class="nav-link text-warning text-decoration-underline" href="#">TRAINS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">LOYALTY</a></li>
+            <li class="nav-item"><a class="nav-link text-warning text-decoration-underline" href="#">IRCTC eWallet</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">BUSES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FLIGHTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">HOTELS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">HOLIDAYS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">MEALS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">PROMOTIONS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">MORE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <div class="main_container">
+      <div class="left_content">
+        <div class="search_box">
+          <div class="search_box_top">
+            <div class="pnr_status">PNR STATUS</div>
+            <div class="charts_vacancy">CHARTS VACANCY</div>
+          </div>
+
+          <div class="book_ticket_search_box">
+            <div class="book_ticket_text">
+              <h1>BOOK TICKET</h1>
+            </div>
+            
+          </div>
+
+          <div class="search_train_box">
+              <form action="" method="post" >
+                  <input type="hidden" name="page" value="index"/>
+            <input type="text" class="from" placeholder="From" name="fromstation" id="fromstation" />
+            <input type="date" class="dob" name="" id="" />
+            <input type="text" class="to" placeholder="TO" name="tostation" id="tostation" />
+            <select class="classes">
+              <option value="">All Classes</option>
+              <option value="">AC First</option>
+              <option value="">AC Second</option>
+              <option value="">AC Third</option>
+              <option value="">First Class</option>
+              <option value="">Second Setting</option>
+            </select>
+            <select class="general">
+              <option value="">GENERAL</option>
+              <option value="">LADIES</option>
+              <option value="">TATKAL</option>
+              <option value="">DUTY PASS</option>
+              <option value="">PREMIUM TATKAL</option>
+              <option value="">PERSON WITH DISABILITY</option>
+              <option value="">LOWER BERTH/SR.CITIZEN</option>
+            </select><br>
+            <input type="checkbox" class="checkboxbtn" name="" id=""><span class="maincheckboxtext">Person With Disability Concession</span>
+            <input type="checkbox" class="checkboxbtn" name="" id=""><span class="maincheckboxtext">Flexible With Date</span>  <br>
+            <input type="checkbox" class="checkboxbtn" name="" id=""><span class="maincheckboxtext">Train With Available Berth</span>
+            <input type="checkbox" class="checkboxbtn" name="" id=""><span class="maincheckboxtext">Railway Pass Concession</span>
+            
+            <button type="submit"  class="find_train" style="margin-top: 40px">Search</button>
+            
+            
+            <button class="disha_btn" style="margin-top: 40px" type="submit">Easy booking on AskDISHA</button>
+              </form>
+          </div>
+        </div>
+        <div class="notices">
+            <h6>
+                Customers can use enhanced interface for their IRCTC related queries!! https://equery.irctc.co.in
+            </h6>
+            <p> Customer Care Numbers : 14646/08044647999 /08035734999
+
+            </p>
+            <h6>
+                BEWARE OF FRAUDSTERS: Always download official IRCTC Rail Connect App from the Google Play Store or Apple App Store only.
+            </h6>
+        </div>
+      </div>
+
+      <div class="main_content_text">
+        <h1>INDIAN RAILWAYS</h1>
+        <h3>
+          <span>Saftey </span>
+          <hr />
+          <span>&nbsp; Security</span>
+          <hr />
+          <span>&nbsp; Punctuality</span>
+        </h3>
+      </div>
+    </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <h2>Have you not found the right one?</h2>
+            <h3>Find a service suitable for you here.</h3>
+
+            <div class="grid" >
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <div class="service-label">FLIGHTS</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-bed"></i></div>
+                    <div class="service-label">HOTELS</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="service-label">RAIL DRISHTI</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="service-label">E-CATERING</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-bus"></i></div>
+                    <div class="service-label">BUS</div>
+                </div>
+            </div>
+            <div class="grid" style="margin-top: 40px;">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-umbrella-beach"></i></div>
+                    <div class="service-label">HOLIDAY PACKAGES</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-train-subway"></i></div>
+                    <div class="service-label">TOURIST TRAIN</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-mountain-sun"></i></div>
+                    <div class="service-label">HILL RAILWAYS</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-train"></i></div>
+                    <div class="service-label">CHARTER TRAIN</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-image"></i></div>
+                    <div class="service-label">GALLERY</div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; padding-top: 115px;">
+            <h2>HOLIDAYS</h2>
+
+                <div class="card-container" style="margin-top: 50px;">
+                    <div class="card">
+                    <img src="https://www.irctc.co.in/nget/assets/images/exterior.jpg" alt="Maharajas' Express">
+                    <div class="card-body">
+                        <div class="card-title">Maharajas' Express</div>
+                        <div class="card-text">
+                            Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.
+                        </div>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <img src="https://www.irctc.co.in/nget/assets/images/Thailand.jpg" alt="International Packages">
+                    <div class="card-body">
+                        <div class="card-title">International Packages</div>
+                        <div class="card-text">
+                            Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.
+                        </div>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <img src="https://www.irctc.co.in/nget/assets/images/Kashmir.jpg" alt="Domestic Air Packages">
+                    <div class="card-body">
+                        <div class="card-title">Domestic Air Packages</div>
+                        <div class="card-text">
+                            Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!
+                        </div>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                    </div>
+
+
+                    
+
+                </div>
+
+
+                <div class="card-container" style="margin-top: 50px;">
+
+
+                    <div class="card">
+                        <img src="https://www.irctc.co.in/nget/assets/images/Bharat_Gaurav.jpg" alt="Bharat Gaurav Tourist Train">
+                        <div class="card-body">
+                            <div class="card-title">Bharat Gaurav Tourist Train</div>
+                            <div class="card-text">
+                                IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.
+                            </div>
+                            <a href="#" class="read-more">Read More »</a>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="https://www.irctc.co.in/nget/assets/images/Manali.jpg" alt="Rail Tour Packages">
+                        <div class="card-body">
+                            <div class="card-title">Rail Tour Packages</div>
+                            <div class="card-text">
+                                RCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.
+                            </div>
+                            <a href="#" class="read-more">Read More »</a>
+                        </div>
+                    </div>
+                    <div class="card_img" >
+                        <img src="http://contents.irctc.co.in/en/HOME_BOTTOM_RIGHT.jpeg" alt="IRCTC eWallet"style="height: 600px;">
+                    </div>
+                </div>
+        </div>
+
+
+    <div class="social-connect" style="text-align: center; margin-top: 70px;">
+        <p>Get Connected with us on social networks</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-telegram-plane"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-tumblr"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+<footer class="footer" style="margin-top: 4px;">
+  
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>IRCTC Trains</h4>
+        <h4>General Information</h4>
+        <h4>Important Information</h4>
+        <h4>Agents</h4>
+        <h4>Enquiries</h4>
+      </div>
+      <div class="footer-column">
+        <h4>How To</h4>
+        <h4>IRCTC Official App</h4>
+        <h4>Advertise with us</h4>
+        <h4>Refund Rules</h4>
+        <h4>Person With Disability Facilities</h4>
+      </div>
+      <div class="footer-column">
+        <h4>IRCTC eWallet</h4>
+        <h4>Avail Loyalty Benefits</h4>
+        <h4>IRCTC-iPAY Payment Gateway</h4>
+        <h4>IRCTC Zone</h4>
+        <h4>DMRC Ticket Booking at IRCTC</h4>
+      </div>
+      <div class="footer-column">
+        <h4>For Newly Migrated Agents</h4>
+        <h4>Mobile Zone</h4>
+        <h4>Policies</h4>
+        <h4>Ask Disha ChatBot</h4>
+        <h4>About us</h4>
+      </div>
+      <div class="footer-column">
+        <h4>Help & Support</h4>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom" style="text-align: center;">
+    <div class="logos">
+      <img src="https://www.irctc.co.in/nget/assets/images/security.png" alt="VeriSign">
+      <p>Copyright © 2025 - www.irctc.co.in. All Rights Reserved</p>
+    </div>
+    
+  </div>
+    <script>
+        function updateClock() {
+          const now = new Date();
+          const day = String(now.getDate()).padStart(2, '0');
+          const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+          const month = monthNames[now.getMonth()];
+          const year = now.getFullYear();
+          
+          const hours = String(now.getHours()).padStart(2, '0');
+          const minutes = String(now.getMinutes()).padStart(2, '0');
+          const seconds = String(now.getSeconds()).padStart(2, '0');
+          
+          const formatted = `${day}-${month}-${year} [${hours}:${minutes}:${seconds}]`;
+          document.getElementById('clock').textContent = formatted;
+        }
+      
+        setInterval(updateClock, 1000);
+        updateClock(); 
+      </script>
+      <!-- Bootstrap Bundle JS with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Add inside <nav> element -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNavbar">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+  </body>
+</html>
